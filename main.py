@@ -12,5 +12,5 @@ def main():
         converted_date = convert_date(operation["date"])
         converted_payment_from = convert_payment_info(operation["from"])
         converted_payment_to = convert_payment_info(operation["to"])
-        result = f""
+        result = f"{converted_date} {converted_payment_from} {converted_payment_to}"
         print(result)

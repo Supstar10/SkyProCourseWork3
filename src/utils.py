@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 from pathlib import Path
 
 
@@ -18,10 +19,15 @@ def get_executed_operations(operations):
             return operation
 
 
+def data_from_iso(executed_operations):
+    return datetime.fromisoformat(executed_operations["data"])
+
+
 def sort_operations(executed_operations):
     """
     Сортирует операции по дате 
     """
+
     for operation in operations:
         if operation["date"] >
 
